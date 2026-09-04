@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="KAGE — современная японская кухня, суши, сашими и морепродукты в Москве.">
+  <title>KAGE — ресторан современной японской кухни</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top"><span>影</span>KAGE</a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню">☰</button>
+    <nav class="nav" aria-label="Навигация"><a href="#menu">Меню</a><a href="#about">О ресторане</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+    <div class="header-actions"><a class="phone" href="tel:+74951210888">+7 495 121-08-88</a><button class="outline reserve-open" type="button">Забронировать</button><button class="cart-open" type="button">Корзина <b id="cart-count">0</b></button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="kicker">Japanese dining · Moscow</p><h1>Вкус в своей <em>чистой форме.</em></h1><p>Современная японская кухня, морепродукты утреннего улова и точность, доведённая до искусства.</p><div class="actions"><a class="primary" href="#menu">Смотреть меню</a><button class="outline reserve-open" type="button">Забронировать</button></div></div>
+      <div class="hero-image" role="img" aria-label="Ассорти суши и сашими"></div>
+      <div class="hero-meta"><span>Большая Дмитровка, 11</span><span>Ежедневно · 12:00—00:00</span></div>
+    </section>
+
+    <section class="section popular"><div class="section-head"><div><p class="kicker">Выбор гостей</p><h2>Популярные блюда</h2></div><p>Авторские сочетания, безупречный продукт и японская сдержанность в каждой подаче.</p></div><div class="cards" id="popular-grid"></div></section>
+
+    <section class="seasonal"><div class="seasonal-image"></div><div class="seasonal-copy"><p class="kicker">Фирменное предложение</p><h2>KAGE <em>Omakase</em></h2><p>Доверие шефу в 18 подачах: от нежного хамачи до выдержанного тунца и морского ежа. Состав меняется вместе с уловом.</p><strong>8 900 ₽</strong><button class="primary" id="add-set" type="button">Добавить сет</button></div></section>
+
+    <section class="section menu-section" id="menu"><div class="section-head"><div><p class="kicker">À la carte</p><h2>Меню</h2></div><label class="search">⌕ <input id="search" type="search" placeholder="Найти блюдо" aria-label="Поиск по меню"></label></div><div class="tabs" id="tabs" role="tablist"></div><div class="cards menu-grid" id="menu-grid"></div><div class="empty" id="empty" hidden>Ничего не найдено. Измените запрос или категорию.</div></section>
+
+    <section class="section about" id="about"><div><p class="kicker">Философия Kage</p><h2>Главное остаётся в <em>деталях.</em></h2><p>Название Kage переводится как «тень». Мы верим: мастерство не должно заслонять продукт. Оно лишь подчёркивает его характер.</p><div class="facts"><b>48 ч<small>от вылова до кухни</small></b><b>0°—2°<small>хранение рыбы</small></b><b>12 мест<small>за omakase-столом</small></b></div></div><div class="about-image"></div></section>
+
+    <section class="chef"><div class="chef-image"></div><div><p class="kicker">Шеф-повар</p><h2>Рэн Такахаси</h2><blockquote>«Техника важна. Но ещё важнее — вовремя остановиться и позволить продукту говорить самому».</blockquote><p>Работал в Киото и Осаке, исследуя традиции эдомаэ. В Kage Рэн соединяет японскую точность с северными морепродуктами.</p></div></section>
+
+    <section class="section gallery"><p class="kicker">Атмосфера</p><h2>Вечер в Kage</h2><div class="gallery-grid"><img src="https://images.unsplash.com/photo-1774019556917-bb28cb12b577?auto=format&fit=crop&w=1200&q=80" alt="Интерьер ресторана" loading="lazy"><img src="https://isorepublic.com/wp-content/uploads/2018/11/isorepublic-sushi-platter-1.jpg" alt="Суши" loading="lazy"><img src="https://catchsushibar.dk/wp-content/uploads/2020/10/DSC03020-2-min.jpg" alt="Роллы" loading="lazy"></div></section>
+
+    <section class="section delivery" id="delivery"><div><p class="kicker">Доставка и оплата</p><h2>Kage у вас дома.</h2></div><div class="delivery-list"><article><b>01</b><h3>Бережно доставим</h3><p>В пределах ТТК — от 60 минут. Бесплатно при заказе от 4 000 ₽.</p></article><article><b>02</b><h3>Сохраним температуру</h3><p>Холодные и горячие блюда упаковываем раздельно.</p></article><article><b>03</b><h3>Оплата как удобно</h3><p>Банковской картой онлайн или при получении.</p></article></div></section>
+
+    <section class="contacts" id="contacts"><div><p class="kicker">Контакты</p><h2>Будем ждать вас вечером.</h2><p>Москва, Большая Дмитровка, 11</p><p>Ежедневно, 12:00—00:00</p><a href="tel:+74951210888">+7 495 121-08-88</a><button class="primary reserve-open" type="button">Забронировать</button></div><iframe title="Карта KAGE" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=37.60%2C55.75%2C37.63%2C55.77&amp;layer=mapnik&amp;marker=55.7635%2C37.616"></iframe></section>
+  </main>
+
+  <footer><a class="logo" href="#top"><span>影</span>KAGE</a><p>Современная японская кухня<br>в центре Москвы</p><nav><a href="#menu">Меню</a><a href="#about">О ресторане</a><a href="#delivery">Доставка</a></nav><p>© 2026 KAGE · Демонстрационный проект</p></footer>
+  <button class="to-top" type="button" aria-label="Наверх">↑</button>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" aria-label="Корзина" aria-hidden="true"><button class="close" type="button" aria-label="Закрыть">×</button><h2>Ваша корзина</h2><div id="cart-items"></div><div class="cart-total"><span>Итого</span><strong id="total">0 ₽</strong></div><button class="primary full" id="checkout-open" type="button">Оформить заказ</button></aside>
+
+  <dialog id="reserve"><button class="close" type="button" aria-label="Закрыть">×</button><div class="form-view"><p class="kicker">KAGE</p><h2>Бронирование стола</h2><p>Администратор подтвердит бронь по телефону.</p><form id="reserve-form"><div class="row"><label>Дата<input name="date" type="date" required></label><label>Время<select name="time" required><option value="">Выберите</option><option>18:30</option><option>20:00</option><option>21:30</option></select></label></div><label>Гостей<select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label><label>Имя<input name="name" required></label><label>Телефон<input name="phone" type="tel" required pattern="[+0-9 ()-]{10,}"></label><button class="primary full" type="submit">Забронировать</button></form></div><div class="success" hidden><b>✓</b><h2>Стол забронирован</h2><p>Мы свяжемся с вами для подтверждения.</p></div></dialog>
+
+  <dialog id="checkout"><button class="close" type="button" aria-label="Закрыть">×</button><div class="form-view"><p class="kicker">Ваш заказ</p><h2>Оформление</h2><form id="checkout-form"><div class="switch"><label><input type="radio" name="type" value="delivery" checked> Доставка</label><label><input type="radio" name="type" value="pickup"> Самовывоз</label></div><label>Имя<input name="name" required></label><label>Телефон<input name="phone" type="tel" required pattern="[+0-9 ()-]{10,}"></label><label id="address-label">Адрес<input name="address" required></label><label>Комментарий<textarea name="comment" rows="3"></textarea></label><button class="primary full" type="submit">Отправить заказ</button><small>Демонстрационная форма: оплата не списывается.</small></form></div><div class="success" hidden><b>✓</b><h2>Заказ принят</h2><p>Мы подтвердим детали по телефону.</p></div></dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
